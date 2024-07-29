@@ -8,3 +8,19 @@ Generate unique avatar based on content, You can use email and text, or other us
 
 ## Website
 [Unique Avatar Generator](https://unique-avatar-generator.vercel.app/)
+
+## Installation
+
+`
+npm install
+`
+
+## Build
+`
+npm run build
+`
+
+## Run
+`
+npm run dev
+`
