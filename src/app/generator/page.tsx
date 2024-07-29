@@ -233,7 +233,7 @@ const Page = () => {
                     <div className='ml-4 space-x-1 mt-4 cursor-pointer' onClick={() => setSelectType(SelectType.emoji)}>
                         <input
                             type="radio"
-                            value="emoji"
+                            value={SelectType.emoji}
                             checked={selectType === SelectType.emoji}
                             onChange={handleSelectType}
                         />
@@ -244,7 +244,7 @@ const Page = () => {
                          onClick={() => setSelectType(SelectType.geometry)}>
                         <input
                             type="radio"
-                            value="geometry"
+                            value={SelectType.geometry}
                             checked={selectType === SelectType.geometry}
                             onChange={handleSelectType}
                         />
