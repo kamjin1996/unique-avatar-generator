@@ -207,7 +207,7 @@ const Page = () => {
     };
 
     return (
-        <div className='flex flex-col justify-center items-center space-y-4 mt-20'>
+        <div className='flex flex-col justify-center items-center space-y-4 mt-12'>
             <div className='flex flex-col flex justify-start items-start'>
                 <div>
                     <label>Text: </label> <input className='ml-2 p-2 dark:text-gray-900' onChange={(e) => {
