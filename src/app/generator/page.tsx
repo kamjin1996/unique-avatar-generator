@@ -80,29 +80,31 @@ const Page = () => {
     }
 
     return (
-        <div className='flex flex-col space-y-4 mt-20'>
-            <div className='space-x-4'>
-                <label>Text:</label> <input className='p-2 dark:text-gray-900' onChange={(e) => {
-                setEmailOrText(e.target.value)
-            }
-            } placeholder="example@email.com"/>
-
-                <label>Width:</label>
-                <select className='p-1 dark:text-gray-900' onChange={(e) => {
-                    setWidth(parseInt(e.target.value))
-                }} defaultValue="128">
-                    <option value="64">64x64</option>
-                    <option value="128">128x128</option>
-                    <option value="256">256x256</option>
-                    <option value="512">512x512</option>
-                    <option value="1024">1024x1024</option>
-                </select>
-
-                <button className='bg-blue-500 hover:bg-blue-700 rounded px-2 py-1' onClick={handleGenerate}>Generate
-                </button>
+        <div className='flex flex-col justify-center items-center space-y-4 mt-20'>
+            <div className='flex flex-col flex justify-start items-start'>
+                <div>
+                    <label>Text: </label> <input className='ml-2 p-2 dark:text-gray-900' onChange={(e) => {
+                    setEmailOrText(e.target.value)
+                }
+                } placeholder="example@email.com"/>
+                </div>
+                <br></br>
+                <div>
+                    <label>Width: </label>
+                    <select className='ml-2 p-1 dark:text-gray-900' onChange={(e) => {
+                        setWidth(parseInt(e.target.value))
+                    }} defaultValue="128">
+                        <option value="64">64x64</option>
+                        <option value="128">128x128</option>
+                        <option value="256">256x256</option>
+                        <option value="512">512x512</option>
+                        <option value="1024">1024x1024</option>
+                    </select>
+                </div>
             </div>
             <img className='mt-2' width={width} height={100} src={avatar}/>
-            <button className='w-40 hover:bg-blue-700 bg-blue-500 rounded px-2 py-1' onClick={handleDownload}>Download
+            <button className='w-40 hover:bg-blue-700 bg-blue-500 rounded px-2 py-1 text-gray-100'
+                    onClick={handleDownload}>Download
             </button>
         </div>
 
