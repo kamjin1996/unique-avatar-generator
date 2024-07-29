@@ -15,7 +15,7 @@ const Page = () => {
 
     useEffect(() => {
         handleGenerate()
-    }, [emailOrText, selectType])
+    }, [emailOrText, selectType,width])
 
     function handleGenerate() {
         let avatar;
